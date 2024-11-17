@@ -22,6 +22,6 @@ I've committed all of the `node_modules` into the repository but you could also
 ### some problems I had with importmaps
 
 I had a LOT of problems with the importmaps here -- for whatever reason when I
-was developing locally ngrok / tailscale funnel it was super flaky and
+was developing locally with ngrok / tailscale funnel it was super flaky and
 sometimes files would just randomly not load. I think possibly `python3 -m
 http.server` was to blame? Really not sure.
