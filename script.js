@@ -14,7 +14,7 @@ configureOAuth({
 });
 
 async function login() {
-    username = document.getElementById("username").value
+    const username = document.getElementById("username").value
     const { identity, metadata } = await resolveFromIdentity(username);
     const authUrl = await createAuthorizationUrl({
         metadata: metadata,
