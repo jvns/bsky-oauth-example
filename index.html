@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>bsky oauth example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="importmap">
+{
+  "imports": {
+    "nanoid": "./node_modules/nanoid/bin/dist/index.js",
+    "nanoid/non-secure": "./node_modules/nanoid/non-secure/index.js",
+    "nanoid/url-alphabet": "./node_modules/nanoid/url-alphabet/dist/index.js",
+    "@atcute/oauth-browser-client": "./node_modules/@atcute/oauth-browser-client/dist/index.js",
+    "@atcute/client": "./node_modules/@atcute/client/dist/index.js",
+    "@atcute/client/utils/did": "./node_modules/@atcute/client/dist/utils/did.js"
+  }
+}
+</script>
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- make a cute login form -->
+    <h1>bsky oauth example</h1>
+    <input type="text" id="username" placeholder="you.bsky.social">
+    <button id="login" onclick="login()">login</button>
+
+    <div id="following"></div>
+
+  </body>
+</html>
