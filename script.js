@@ -58,7 +58,6 @@ async function getFollowing(xrpc) {
 function display(follows) {
     // create new <ul>
     const list = document.createElement('ul');
-    console.log(follows)
     for (const follow of follows) {
         const item = document.createElement('li');
         item.textContent = follow.handle;
@@ -85,7 +84,6 @@ async function restoreSession() {
     const did = Object.keys(JSON.parse(sessions))[0]
     const session = await getSession(did, { allowStale: true });
     const agent = new OAuthUserAgent(session)
-    console.log("agent", agent);
     window.xrpc = new XRPC({handler: agent});
     window.agent = agent;
 }
