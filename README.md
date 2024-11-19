@@ -8,6 +8,15 @@ worked.
 
 You can see it in action at https://bsky-oauth-example.jvns.ca
 
+Also the whole point of this project is to work out how to use Bluesky OAuth
+without needing a build system, if you're ok with using a build system it
+might be better to just follow the very good directions for
+[@atcute/oauth/browser-client](https://github.com/mary-ext/atcute/tree/trunk/packages/oauth/browser-client)
+instead.
+
+Also I did not think about how to set this up very hard and it's probably not
+the Best Way To Do Things.
+
 ### how to use it
 
 To get it to work, you need to replace `https://bsky-oauth-example.jvns.ca`
